@@ -1,0 +1,15 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+.deepeval/
+.venv/
+.DS_Store
+task1/
+task2/
+task3/
+task4/
+report/WSN_Task_Completion_Report.*
+report/assets/ref_p1-000.png
+backend/datasets/juelich_raw/*.xlsx

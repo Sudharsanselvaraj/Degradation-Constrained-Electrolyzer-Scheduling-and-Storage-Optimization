@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "calibration_points_count": 89,
+  "parameters": {
+    "r_mem_0_ohm_cm2": 0.07211047321745388,
+    "j0_ref_a_cm2": 0.003177253001180888,
+    "alpha_ct": 0.7,
+    "b_conc_v": 0.15
+  },
+  "metrics": {
+    "cell_voltage_rmse_mv": 19.780677200769148,
+    "cell_voltage_mae_mv": 14.543147897654935,
+    "cell_voltage_r2": 0.9591300677776977,
+    "stack_voltage_rmse_v": 0.5934203160230744,
+    "h2_production_mean_error_pct": 7.91267849250195
+  }
+}

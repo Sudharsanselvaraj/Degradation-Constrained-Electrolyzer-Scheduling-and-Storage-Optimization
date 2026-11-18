@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" style="background:#09342B;">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5F937" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  
+  <text x="40" y="60" font-family="monospace" font-size="14" fill="#E5F937" letter-spacing="2">[FZ JÜLICH 100 KW PEM SCHEMATIC]</text>
+  <text x="40" y="95" font-family="sans-serif" font-size="24" font-weight="300" fill="#ffffff">30-Cell Bipolar Stack Architecture</text>
+  
+  <!-- Anode / Membrane / Cathode layers -->
+  <g transform="translate(100, 140)">
+    <!-- Endplate Left -->
+    <rect x="0" y="0" width="30" height="240" rx="6" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <text x="15" y="130" font-family="monospace" font-size="11" fill="#94a3b8" transform="rotate(-90, 15, 130)" text-anchor="middle">ANODE ENDPLATE</text>
+
+    <!-- Cell 1 -->
+    <rect x="45" y="20" width="35" height="200" rx="4" fill="#0d4238" stroke="#E5F937" stroke-width="1.5"/>
+    <rect x="85" y="20" width="15" height="200" rx="2" fill="#E5F937" opacity="0.8"/>
+    <rect x="105" y="20" width="35" height="200" rx="4" fill="#0d4238" stroke="#10b981" stroke-width="1.5"/>
+    
+    <!-- Repeated Cells Indicator -->
+    <line x1="160" y1="120" x2="240" y2="120" stroke="rgba(255,255,255,0.4)" stroke-dasharray="4,4" stroke-width="2"/>
+    <text x="200" y="110" font-family="monospace" font-size="12" fill="#E5F937" text-anchor="middle">N = 30 CELLS (300 cm²)</text>
+    <text x="200" y="140" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.6)" text-anchor="middle">RMSE: 19.78 mV/cell</text>
+
+    <!-- Cell 30 -->
+    <rect x="260" y="20" width="35" height="200" rx="4" fill="#0d4238" stroke="#E5F937" stroke-width="1.5"/>
+    <rect x="300" y="20" width="15" height="200" rx="2" fill="#E5F937" opacity="0.8"/>
+    <rect x="320" y="20" width="35" height="200" rx="4" fill="#0d4238" stroke="#10b981" stroke-width="1.5"/>
+
+    <!-- Endplate Right -->
+    <rect x="370" y="0" width="30" height="240" rx="6" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <text x="385" y="130" font-family="monospace" font-size="11" fill="#94a3b8" transform="rotate(90, 385, 130)" text-anchor="middle">CATHODE ENDPLATE</text>
+
+    <!-- Flow paths -->
+    <!-- H2O in -->
+    <path d="M -40 60 L 0 60" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="-50" y="65" font-family="monospace" font-size="12" fill="#38bdf8" text-anchor="end">H₂O Intake</text>
+    <!-- O2 out -->
+    <path d="M 20 -20 L 20 0" stroke="#f43f5e" stroke-width="3"/>
+    <text x="20" y="-30" font-family="monospace" font-size="12" fill="#f43f5e" text-anchor="middle">O₂ Byproduct</text>
+    <!-- H2 out -->
+    <path d="M 385 240 L 385 270" stroke="#E5F937" stroke-width="3"/>
+    <text x="385" y="290" font-family="monospace" font-size="12" fill="#E5F937" text-anchor="middle">Pure H₂ (99.99%)</text>
+  </g>
+
+  <!-- Telemetry Box Right -->
+  <g transform="translate(550, 140)">
+    <rect width="200" height="240" rx="12" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <text x="20" y="35" font-family="monospace" font-size="11" fill="#E5F937">OPERATING ENVELOPE</text>
+    <text x="20" y="70" font-family="sans-serif" font-size="12" fill="#94a3b8">Nominal Power: 100 kW</text>
+    <text x="20" y="100" font-family="sans-serif" font-size="12" fill="#94a3b8">Pressure: 30 bar</text>
+    <text x="20" y="130" font-family="sans-serif" font-size="12" fill="#94a3b8">Temperature: 65 °C</text>
+    <text x="20" y="160" font-family="sans-serif" font-size="12" fill="#94a3b8">Current: 0 – 300 A</text>
+    <text x="20" y="190" font-family="sans-serif" font-size="12" fill="#94a3b8">Overpotential: η_act+η_ohm</text>
+    <line x1="20" y1="205" x2="180" y2="205" stroke="rgba(255,255,255,0.1)"/>
+    <text x="20" y="225" font-family="monospace" font-size="10" fill="#10b981">STATUS: CALIBRATED (R²=0.959)</text>
+  </g>
+</svg>

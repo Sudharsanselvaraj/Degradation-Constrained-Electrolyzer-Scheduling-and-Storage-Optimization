@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Funnel Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #F8F8F3;
+  color: #3B3B33;
+  -webkit-font-smoothing: antialiased;
+}
+
+code, pre, .font-mono {
+  font-family: 'Geist Mono', 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #EDEDE2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8C9BD;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9D9E92;
+}
+
+/* Glassmorphism helpers */
+.glass-panel-light {
+  background: rgba(248, 248, 243, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-panel-dark {
+  background: rgba(9, 52, 43, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(248, 248, 243, 0.15);
+}
+
+/* Pause marquee on hover */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="340" height="80">
+  <defs>
+    <path id="petal" d="M 21.11,6.21 Q 19.64,9.92 23.21,11.72 L 37.49,18.94 Q 41.95,21.19 43.96,16.62 A 47.00 47.00 0 0 0 43.96,-16.62 Q 41.95,-21.19 37.49,-18.94 L 23.21,-11.72 Q 19.64,-9.92 21.11,-6.21 A 22.00 22.00 0 0 1 21.11,6.21 Z" />
+  </defs>
+  <!-- Emblem Mark (64x64 at (8, 8)) -->
+  <g transform="translate(40, 40) scale(0.68)" fill="#E5F937">
+    <circle r="14.00" cx="0" cy="0" />
+    <use href="#petal" transform="rotate(30)" />
+    <use href="#petal" transform="rotate(90)" />
+    <use href="#petal" transform="rotate(150)" />
+    <use href="#petal" transform="rotate(210)" />
+    <use href="#petal" transform="rotate(270)" />
+    <use href="#petal" transform="rotate(330)" />
+  </g>
+  <!-- Typography Wordmark -->
+  <text x="88" y="46" font-family="'Funnel Sans', 'Inter', system-ui, -apple-system, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.01em" fill="#E5F937">HYDRAULIX</text>
+  <text x="89" y="64" font-family="'Geist Mono', 'SF Mono', monospace" font-size="9" font-weight="600" letter-spacing="0.22em" fill="#E5F937">GREEN HYDROGEN TWIN</text>
+</svg>
